@@ -1,25 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import Card from "./Card";
+import Sdata from './Components/Sdata'
+import './index.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   
+      <Card 
+      cardimg={Sdata[0].cardimg}
+      heading={Sdata[0].heading}
+      name={Sdata[0].name}
+      link={Sdata[0].link}
+      />
+       <Card 
+       cardimg={Sdata[1].cardimg}
+      heading={Sdata[1].heading}
+      name={Sdata[1].name}
+      link={Sdata[1].link}
+      />
+       <Card 
+        cardimg={Sdata[2].cardimg}
+        heading={Sdata[2].heading}
+        name={Sdata[2].name}
+        link={Sdata[2].link}
+      />
+       <Card 
+           cardimg={Sdata[3].cardimg}
+        heading={Sdata[3].heading}
+        name={Sdata[3].name}
+        link={Sdata[3].link}
+     
+
+      />
+        <Card 
+     cardimg={Sdata[4].cardimg}
+        heading={Sdata[4].heading}
+        name={Sdata[4].name}
+        link={Sdata[5].link}
+      />
+        <Card 
+       cardimg={Sdata[5].cardimg}
+        heading={Sdata[5].heading}
+        name={Sdata[5].name}
+        link={Sdata[5].link}
+      />
     </div>
   );
 }
-
 export default App;
+
